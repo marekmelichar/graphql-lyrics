@@ -57,12 +57,14 @@ const mutation = gql`
   }
 `;
 
-// let query = {
-//   songs {
-//     id
-//     title
-//   }
-// }
+const query = gql`
+  {
+    songs {
+      id
+      title
+    }
+  }
+`;
 
 // trick to use query and mutation at the same component :
 export default graphql(mutation)(
