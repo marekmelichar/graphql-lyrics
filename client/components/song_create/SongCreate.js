@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
 import { Link, hashHistory } from 'react-router';
-import query from '../../queries/fetchSongs';
+// import query from '../../queries/fetchSongs';
 
 class SongCreate extends Component {
   constructor(props) {
@@ -45,14 +45,14 @@ class SongCreate extends Component {
   }
 }
 
-// const query = gql`
-//   {
-//     songs {
-//       id
-//       title
-//     }
-//   }
-// `;
+const query = gql`
+  {
+    songs {
+      id
+      title
+    }
+  }
+`;
 
 // mutation is used when data is being sent to database
 const mutation = gql`
