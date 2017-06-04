@@ -18,6 +18,13 @@ class SongCreate extends Component {
   onSubmit(event) {
     event.preventDefault()
 
+    // let query = {
+    //   songs {
+    //     id
+    //     title
+    //   }
+    // }
+
     // to send data into database :
     // it will return a Promise, so we can chain on it
     // refetchQueries: [{ query }]is used because we want to re-render and re-fetch data on SongList and that is another component
