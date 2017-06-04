@@ -1,6 +1,15 @@
 import gql from 'graphql-tag';
 
-export default gql`
+// export default gql`
+//   {
+//     songs {
+//       id
+//       title
+//     }
+//   }
+// `;
+
+const query = gql`
   {
     songs {
       id
@@ -8,3 +17,5 @@ export default gql`
     }
   }
 `;
+
+export default query;
